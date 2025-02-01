@@ -7,6 +7,8 @@ module fluxo_dados (
     input         zeraC,
     input         zera_timer,
     input         conta_timer,
+    input         contaL,
+    input         zeraL,
     output        igual,
     output        fimE,
     output        fim_timer,
@@ -15,7 +17,7 @@ module fluxo_dados (
     output        ultima_sequencia,
     output        db_endmenorquelimite,
     output        db_tem_jogada,
-    output [3:0]  db_limite,
+    output [3:0]  db_limite, // sinal de depuracao para identificar o limite atual
     output [3:0]  db_jogada,
     output [3:0]  db_contagem,
     output [3:0]  db_memoria
@@ -52,7 +54,7 @@ module fluxo_dados (
     );
 
     // contador_m limite
-    contador_m contador_limite (
+    contador_163 contador_limite (
       .clock( clock ),
       .clr  ( ~zeraL ),	 
       .ld   ( 1'b1 ),
