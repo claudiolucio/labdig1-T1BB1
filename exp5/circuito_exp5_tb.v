@@ -97,9 +97,6 @@ module tb_circuito_exp5;
             chaves = 4'b0000; 
             #(5*clockPeriod);
         end
-
-        // Finaliza a simulação
-        $finish;
     end
 
 endmodule

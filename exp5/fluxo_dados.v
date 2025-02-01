@@ -73,7 +73,7 @@ module fluxo_dados (
       .AGBi( 1'b0 ),
       .AEBi( 1'b1 ),
       .ALBo( db_endmenorquelimite ), // sinal de depuracao pra colocar no analog display
-      .AGBo( 1'b0 ),
+      .AGBo( maiorquelim ),
       .AEBo( fim_sequencia )
     );
 	 
