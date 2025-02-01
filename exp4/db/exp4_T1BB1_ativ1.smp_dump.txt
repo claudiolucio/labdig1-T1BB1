@@ -1,0 +1,11 @@
+
+State Machine - |circuito_exp4|unidade_controle:uc|Eatual
+Name Eatual.acertou Eatual.errou Eatual.proximo Eatual.comparacao Eatual.registra Eatual.espera Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 0 1 1 
+Eatual.espera 0 0 0 0 0 1 0 1 
+Eatual.registra 0 0 0 0 1 0 0 1 
+Eatual.comparacao 0 0 0 1 0 0 0 1 
+Eatual.proximo 0 0 1 0 0 0 0 1 
+Eatual.errou 0 1 0 0 0 0 0 1 
+Eatual.acertou 1 0 0 0 0 0 0 1 

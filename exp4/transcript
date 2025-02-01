@@ -1,0 +1,384 @@
+# Compile of circuito_exp4.v was successful.
+# Compile of circuito_exp4_tb-MODELO.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 1 failed with no errors.
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp4_tb_erro
+# vsim -gui work.circuito_exp4_tb_erro 
+# Start time: 13:39:08 on Jan 25,2025
+# Loading work.circuito_exp4_tb_erro
+# ** Error: (vsim-3033) Instantiation of 'circuito_exp5' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_exp4_tb_erro File: C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-erro.v Line: 36
+#         Searched libraries:
+#             C:/Users/claud/OneDrive/Documentos/labdig/exp4/work
+# Error loading design
+# End time: 13:39:09 on Jan 25,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 10
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp4_tb_erro
+# vsim -gui work.circuito_exp4_tb_erro 
+# Start time: 13:41:25 on Jan 25,2025
+# Loading work.circuito_exp4_tb_erro
+# Loading work.circuito_exp4
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Error (suppressible): (vsim-3389) Port 'db_iniciar' not found in the connected module (15th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp4_tb_erro/dut File: C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-erro.v Line: 36
+# Error loading design
+# End time: 13:41:25 on Jan 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp4_tb_erro
+# vsim -gui work.circuito_exp4_tb_erro 
+# Start time: 13:43:04 on Jan 25,2025
+# Loading work.circuito_exp4_tb_erro
+# Loading work.circuito_exp4
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_erro/acertou_out \
+sim:/circuito_exp4_tb_erro/caso \
+sim:/circuito_exp4_tb_erro/chaves_in \
+sim:/circuito_exp4_tb_erro/clock_in \
+sim:/circuito_exp4_tb_erro/clockPeriod \
+sim:/circuito_exp4_tb_erro/db_clock_out \
+sim:/circuito_exp4_tb_erro/db_contagem_out \
+sim:/circuito_exp4_tb_erro/db_estado_out \
+sim:/circuito_exp4_tb_erro/db_igual_out \
+sim:/circuito_exp4_tb_erro/db_iniciar_out \
+sim:/circuito_exp4_tb_erro/db_jogadafeita_out \
+sim:/circuito_exp4_tb_erro/db_memoria_out \
+sim:/circuito_exp4_tb_erro/db_tem_jogada_out \
+sim:/circuito_exp4_tb_erro/errou_out \
+sim:/circuito_exp4_tb_erro/iniciar_in \
+sim:/circuito_exp4_tb_erro/leds_out \
+sim:/circuito_exp4_tb_erro/pronto_out \
+sim:/circuito_exp4_tb_erro/reset_in
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_erro/dut/db_contagem_fio \
+sim:/circuito_exp4_tb_erro/dut/db_estado_fio \
+sim:/circuito_exp4_tb_erro/dut/db_jogada_fio \
+sim:/circuito_exp4_tb_erro/dut/db_memoria_fio
+run -all
+# Inicio da simulacao
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-erro.v(136)
+#    Time: 117500100 ns  Iteration: 0  Instance: /circuito_exp4_tb_erro
+# Break in Module circuito_exp4_tb_erro at C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-erro.v line 136
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/claud/OneDrive/Documentos/labdig/exp4/wave.do
+vsim -gui work.circuito_exp4_tb_acerto
+# End time: 13:55:05 on Jan 25,2025, Elapsed time: 0:12:01
+# Errors: 0, Warnings: 2
+# vsim -gui work.circuito_exp4_tb_acerto 
+# Start time: 13:55:05 on Jan 25,2025
+# Loading work.circuito_exp4_tb_acerto
+# Loading work.circuito_exp4
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/acertou_out \
+sim:/circuito_exp4_tb_acerto/caso \
+sim:/circuito_exp4_tb_acerto/chaves_in \
+sim:/circuito_exp4_tb_acerto/clock_in \
+sim:/circuito_exp4_tb_acerto/clockPeriod \
+sim:/circuito_exp4_tb_acerto/db_clock_out \
+sim:/circuito_exp4_tb_acerto/db_contagem_out \
+sim:/circuito_exp4_tb_acerto/db_estado_out \
+sim:/circuito_exp4_tb_acerto/db_igual_out \
+sim:/circuito_exp4_tb_acerto/db_iniciar_out \
+sim:/circuito_exp4_tb_acerto/db_jogadafeita_out \
+sim:/circuito_exp4_tb_acerto/db_memoria_out \
+sim:/circuito_exp4_tb_acerto/db_tem_jogada_out \
+sim:/circuito_exp4_tb_acerto/errou_out \
+sim:/circuito_exp4_tb_acerto/iniciar_in \
+sim:/circuito_exp4_tb_acerto/leds_out \
+sim:/circuito_exp4_tb_acerto/pronto_out \
+sim:/circuito_exp4_tb_acerto/reset_in
+do C:/Users/claud/OneDrive/Documentos/labdig/exp4/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/caso'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/clock_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/reset_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/iniciar_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/chaves_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_tem_jogada_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/acertou_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/errou_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/pronto_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/leds_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 16
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_igual_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 18
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_iniciar_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 23
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/dut/db_memoria_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_contagem_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_jogada_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_estado_fio
+run -all
+# Inicio da simulacao
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v(245)
+#    Time: 362500100 ns  Iteration: 0  Instance: /circuito_exp4_tb_acerto
+# Break in Module circuito_exp4_tb_acerto at C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v line 245
+run -all
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/clockPeriod \
+sim:/circuito_exp4_tb_acerto/clock_in \
+sim:/circuito_exp4_tb_acerto/reset_in \
+sim:/circuito_exp4_tb_acerto/iniciar_in \
+sim:/circuito_exp4_tb_acerto/chaves_in \
+sim:/circuito_exp4_tb_acerto/acertou_out \
+sim:/circuito_exp4_tb_acerto/errou_out \
+sim:/circuito_exp4_tb_acerto/pronto_out \
+sim:/circuito_exp4_tb_acerto/leds_out \
+sim:/circuito_exp4_tb_acerto/db_igual_out \
+sim:/circuito_exp4_tb_acerto/db_contagem_out \
+sim:/circuito_exp4_tb_acerto/db_memoria_out \
+sim:/circuito_exp4_tb_acerto/db_estado_out \
+sim:/circuito_exp4_tb_acerto/db_jogadafeita_out \
+sim:/circuito_exp4_tb_acerto/db_clock_out \
+sim:/circuito_exp4_tb_acerto/db_iniciar_out \
+sim:/circuito_exp4_tb_acerto/db_tem_jogada_out \
+sim:/circuito_exp4_tb_acerto/caso
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/dut/db_contagem_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_estado_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_jogada_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_memoria_fio
+# Break key hit
+# Break in Module circuito_exp4_tb_acerto at C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v line 33
+restart -f
+# Can't move the Now cursor.
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# Inicio da simulacao
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v(245)
+#    Time: 362500100 ns  Iteration: 0  Instance: /circuito_exp4_tb_acerto
+# Break in Module circuito_exp4_tb_acerto at C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v line 245
+# Break key hit
+quit -sim
+# End time: 14:04:56 on Jan 25,2025, Elapsed time: 0:09:51
+# Errors: 0, Warnings: 1
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp4 work.circuito_exp4_tb_acerto
+# vsim -gui work.circuito_exp4 work.circuito_exp4_tb_acerto 
+# Start time: 14:06:17 on Jan 25,2025
+# Loading work.circuito_exp4
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# Loading work.circuito_exp4_tb_acerto
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/acertou_out \
+sim:/circuito_exp4_tb_acerto/caso \
+sim:/circuito_exp4_tb_acerto/chaves_in \
+sim:/circuito_exp4_tb_acerto/clock_in \
+sim:/circuito_exp4_tb_acerto/clockPeriod \
+sim:/circuito_exp4_tb_acerto/db_clock_out \
+sim:/circuito_exp4_tb_acerto/db_contagem_out \
+sim:/circuito_exp4_tb_acerto/db_estado_out \
+sim:/circuito_exp4_tb_acerto/db_igual_out \
+sim:/circuito_exp4_tb_acerto/db_iniciar_out \
+sim:/circuito_exp4_tb_acerto/db_jogadafeita_out \
+sim:/circuito_exp4_tb_acerto/db_memoria_out \
+sim:/circuito_exp4_tb_acerto/db_tem_jogada_out \
+sim:/circuito_exp4_tb_acerto/errou_out \
+sim:/circuito_exp4_tb_acerto/iniciar_in \
+sim:/circuito_exp4_tb_acerto/leds_out \
+sim:/circuito_exp4_tb_acerto/pronto_out \
+sim:/circuito_exp4_tb_acerto/reset_in
+add wave -position insertpoint  \
+sim:/circuito_exp4_tb_acerto/dut/db_contagem_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_estado_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_jogada_fio \
+sim:/circuito_exp4_tb_acerto/dut/db_memoria_fio
+run -all
+# Inicio da simulacao
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v(245)
+#    Time: 362500100 ns  Iteration: 0  Instance: /circuito_exp4_tb_acerto
+# Break in Module circuito_exp4_tb_acerto at C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v line 245
+# Compile of circuito_exp4.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp4_tb-acerto.v was successful.
+# Compile of circuito_exp4_tb-erro.v was successful.
+# 13 compiles, 0 failed with no errors.
+do C:/Users/claud/OneDrive/Documentos/labdig/exp4/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/caso'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/clock_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/reset_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/iniciar_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/chaves_in'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_tem_jogada_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/acertou_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/errou_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/pronto_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/leds_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 16
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_igual_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 18
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp4_tb_erro/db_iniciar_out'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp4\wave.do line 23
+# End time: 11:48:06 on Jan 26,2025, Elapsed time: 21:41:49
+# Errors: 0, Warnings: 3

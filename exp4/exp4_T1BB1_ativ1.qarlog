@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	C:/Users/claud/OneDrive/Documentos/labdig/exp4/exp4_T1BB1_ativ1.qarlog
+
+Archive:	C:/Users/claud/OneDrive/Documentos/labdig/exp4/exp4_T1BB1_ativ1.qar
+Date:		Sat Jan 25 13:43:28 2025
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-MODELO.qsf
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-acerto.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/circuito_exp4_tb-erro.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/comparador_85.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/contador_163.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/contador_m.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/contador_m_tb.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/edge_detector.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/exp4_T1BB1_ativ1.qpf
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/fluxo_dados.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/hexa7seg.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/registrador_4.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/sync_rom_16x4.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp4/unidade_controle.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Jan 26 11:06:15 2025
+Source archive file:	C:/Users/claud/OneDrive/Documentos/labdig/exp4/exp4_T1BB1_ativ1.qar
+Archive was extracted into	C:/Users/claud/OneDrive/Documentos/labdig/exp4/exp4_T1BB1_ativ1_restored/
+		 - successfully.

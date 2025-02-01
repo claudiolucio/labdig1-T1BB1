@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3.qarlog
+
+Archive:	C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3.qar
+Date:		Sun Jan 19 11:21:12 2025
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3_ativ3.qpf
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3_ativ3.qsf
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/circuito_exp3_tb.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/comparador_85.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/contador_163.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_fluxo_dados.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_fluxo_dados_tb.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_unidade_controle.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/hexa7seg.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/registrador_4.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/sync_rom_16x4.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_desafio.qarlog
+
+Archive:	C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_desafio.qar
+Date:		Mon Jan 20 12:27:41 2025
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/circuito_exp3_desafio.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/comparador_85.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/contador_163.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_desafio.qpf
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_desafio.qsf
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_fluxo_dados.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/exp3_unidade_controle_desafio.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/hexa7seg.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/registrador_4.v
+C:/Users/claud/OneDrive/Documentos/labdig/exp3/exp3_desafio/sync_rom_16x4.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
