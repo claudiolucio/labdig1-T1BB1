@@ -1,26 +1,18 @@
 module fluxo_dados (
     input         clock,
     input  [3:0]  chaves,
-	 input         contaL,
-    input         zeraL,
-	 input 			zeraR,
+    input         zeraR,
     input         registraR,
-    input         contaE,
-    input         zeraE,
-	 input 			limpaR,
+    input         contaC,
+    input         zeraC,
     input         zera_timer,
     input         conta_timer,
-	 output 			maior,
-	 output 			menor,
     output        igual,
     output        fimE,
-	 output [3:0]  s_jogada,
     output        fim_timer,
     output        jogada_feita,
     output        fim_sequencia,
     output        ultima_sequencia,
-	 output 			enderecoMenorOuIgualLimite,
-	 output 			enderecoIgualLimite,
     output        db_endmenorquelimite,
     output        db_tem_jogada,
     output [3:0]  db_limite,
@@ -30,7 +22,7 @@ module fluxo_dados (
 );
 
     wire   [3:0] s_endereco;  // sinal interno para interligacao dos componentes
-	 wire   [3:0] s_limite;
+	  wire   [3:0] s_limite;
     wire   [3:0] s_dado;
     wire   [3:0] s_chaves;
     
@@ -60,7 +52,7 @@ module fluxo_dados (
     );
 
     // contador_m limite
-    contador_163 contador_limite (
+    contador_m contador_limite (
       .clock( clock ),
       .clr  ( ~zeraL ),	 
       .ld   ( 1'b1 ),
@@ -77,8 +69,8 @@ module fluxo_dados (
       .B   ( s_endereco ),
       .ALBi( 1'b0 ),
       .AGBi( 1'b0 ),
-      .AEBi( enderecoIgualLimite ),
-      .ALBo( enderecoMenorOuIgualLimite ), // sinal de depuracao pra colocar no analog display
+      .AEBi( 1'b1 ),
+      .ALBo( db_endmenorquelimite ), // sinal de depuracao pra colocar no analog display
       .AGBo( 1'b0 ),
       .AEBo( fim_sequencia )
     );

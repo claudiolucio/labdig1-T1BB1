@@ -46,13 +46,13 @@ module unidade_controle (
     parameter espera     = 4'b0011;  // 3
     parameter registra   = 4'b0100;  // 4
     parameter comparacao = 4'b0101;  // 5
-    parameter proxima_jogada    = 4'b0110;  // 6
+    parameter proximajogada    = 4'b0110;  // 6
 
     parameter avalia_sequencia = 4'b0111;  // 7
     parameter proxima_sequencia = 4'b1000;  // 8
 
-    parameter timeout   = 4'b1101; // D
-    parameter errou      = 4'b1110;  // E
+    parameter timeout   = 4'b1101 // D
+    parameter errou      = 4'b1110  // E
     parameter acertou    = 4'b1010;  // A
 
     // Variaveis de estado
@@ -97,7 +97,7 @@ module unidade_controle (
         conta_timer = (Eatual == espera) ? 1'b1 : 1'b0;
         registraR = (Eatual == registra) ? 1'b1 : 1'b0;
         contaE    = (Eatual == proxima_jogada) ? 1'b1 : 1'b0;
-        contaL    = (Eatual == avalia_sequencia) ? 1'b1 : 1'b0;
+        contaL    = (Eatual == ) ? 1'b1 : 1'b0;
         pronto    = (Eatual == acertou || Eatual == errou || Eatual == timeout) ? 1'b1 : 1'b0;
         db_timeout = (Eatual == timeout) ? 7'b0001111 : 8'b0;
         acertou_out = (Eatual == acertou) ? 1'b1 : 1'b0;
@@ -111,7 +111,7 @@ module unidade_controle (
             espera:             db_estado = 4'b0011;  // 3
             registra:           db_estado = 4'b0100;  // 4
             comparacao:         db_estado = 4'b0101;  // 5
-            proxima_jogada:     db_estado = 4'b0110;  // 6
+            proximo:            db_estado = 4'b0110;  // 6
             avalia_sequencia:   db_estado = 4'b0111;  // 7    
             proxima_sequencia:  db_estado = 4'b1000;  // 8
             acertou:            db_estado = 4'b1010;  // A
