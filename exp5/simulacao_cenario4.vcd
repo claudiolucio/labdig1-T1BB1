@@ -1,0 +1,20 @@
+$date
+	Sun Feb 02 03:45:53 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ns
+$end
+$scope module circuito_exp5_tb_timeout $end
+$var wire 1 ! pronto $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0!
+#3065500000
+1!
+#3176500000
+0!

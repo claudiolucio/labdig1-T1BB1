@@ -237,3 +237,424 @@ run -all
 # ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb.v(118)
 #    Time: 1476 ms  Iteration: 0  Instance: /circuito_exp5_tb
 # Break in Module circuito_exp5_tb at C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb.v line 118
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+quit -sim
+# End time: 03:09:48 on Feb 02,2025, Elapsed time: 0:47:28
+# Errors: 0, Warnings: 3
+# Compile of circuito_exp5.v was successful.
+# Compile of circuito_exp5_tb.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of mux2x1.v was successful.
+# Compile of mux2x1_tb.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# Compile of circuito_exp5_tb-erro_rodada4.v was successful.
+# Compile of circuito_exp5_tb-reiniciando_jogo.v was successful.
+# Compile of circuito_exp5_tb-timeout_rodada3.v was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp5_tb_reiniciando_jogo
+# vsim -gui work.circuito_exp5_tb_reiniciando_jogo 
+# Start time: 03:11:29 on Feb 02,2025
+# Loading work.circuito_exp5_tb_reiniciando_jogo
+# Loading work.circuito_exp5
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.contador_m
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+run -all
+# fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v(132)
+#    Time: 2916 ms  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo
+# Break in Module circuito_exp5_tb_reiniciando_jogo at C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v line 132
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_reiniciando_jogo/acertou
+do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/rodada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/clock'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/chaves'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/iniciar'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/reset'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_tem_jogada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/pronto'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/acertou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/errou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_timeout'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/leds'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_igual'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_limite_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24
+do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/rodada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/clock'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/chaves'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/iniciar'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/reset'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_tem_jogada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/pronto'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/acertou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/errou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_timeout'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/leds'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_igual'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_limite_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_reiniciando_jogo/clockPeriod \
+sim:/circuito_exp5_tb_reiniciando_jogo/clock \
+sim:/circuito_exp5_tb_reiniciando_jogo/reset \
+sim:/circuito_exp5_tb_reiniciando_jogo/iniciar \
+sim:/circuito_exp5_tb_reiniciando_jogo/chaves \
+sim:/circuito_exp5_tb_reiniciando_jogo/pronto \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_igual \
+sim:/circuito_exp5_tb_reiniciando_jogo/acertou \
+sim:/circuito_exp5_tb_reiniciando_jogo/errou \
+sim:/circuito_exp5_tb_reiniciando_jogo/leds \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_timeout \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_contagem \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_memoria \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_estado \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_jogadafeita \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_limite \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_tem_jogada \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_endmenorquelimite \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_clock \
+sim:/circuito_exp5_tb_reiniciando_jogo/rom_jogadas \
+sim:/circuito_exp5_tb_reiniciando_jogo/i \
+sim:/circuito_exp5_tb_reiniciando_jogo/jogadas_na_rodada \
+sim:/circuito_exp5_tb_reiniciando_jogo/rodada
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_limite_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_estado_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_memoria_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_contagem_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_jogada_fio
+run -all
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_reiniciando_jogo/clockPeriod \
+sim:/circuito_exp5_tb_reiniciando_jogo/clock \
+sim:/circuito_exp5_tb_reiniciando_jogo/reset \
+sim:/circuito_exp5_tb_reiniciando_jogo/iniciar \
+sim:/circuito_exp5_tb_reiniciando_jogo/chaves \
+sim:/circuito_exp5_tb_reiniciando_jogo/pronto \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_igual \
+sim:/circuito_exp5_tb_reiniciando_jogo/acertou \
+sim:/circuito_exp5_tb_reiniciando_jogo/errou \
+sim:/circuito_exp5_tb_reiniciando_jogo/leds \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_timeout \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_contagem \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_memoria \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_estado \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_jogadafeita \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_limite \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_tem_jogada \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_endmenorquelimite \
+sim:/circuito_exp5_tb_reiniciando_jogo/db_clock \
+sim:/circuito_exp5_tb_reiniciando_jogo/rom_jogadas \
+sim:/circuito_exp5_tb_reiniciando_jogo/i \
+sim:/circuito_exp5_tb_reiniciando_jogo/jogadas_na_rodada \
+sim:/circuito_exp5_tb_reiniciando_jogo/rodada
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_contagem_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_estado_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_jogada_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_limite_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_memoria_fio \
+sim:/circuito_exp5_tb_reiniciando_jogo/dut/db_timeout_fio
+# Break key hit
+# Simulation stop requested.
+restart -f
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+restart -f
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v(132)
+#    Time: 2916 ms  Iteration: 0  Instance: /circuito_exp5_tb_reiniciando_jogo
+# Break in Module circuito_exp5_tb_reiniciando_jogo at C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v line 132
+do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/rodada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/clock'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/chaves'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/iniciar'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/reset'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_tem_jogada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/pronto'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/acertou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/errou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_timeout'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/leds'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_igual'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_limite_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24
+add dataflow sim:/circuito_exp5_tb_reiniciando_jogo/*
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 03:32:46 on Feb 02,2025, Elapsed time: 0:21:17
+# Errors: 0, Warnings: 2
+vsim -gui work.circuito_exp5_tb_erro_rodada4
+# vsim -gui work.circuito_exp5_tb_erro_rodada4 
+# Start time: 03:33:07 on Feb 02,2025
+# Loading work.circuito_exp5_tb_erro_rodada4
+# Loading work.circuito_exp5
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.contador_m
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_erro_rodada4/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_erro_rodada4/clockPeriod \
+sim:/circuito_exp5_tb_erro_rodada4/clock \
+sim:/circuito_exp5_tb_erro_rodada4/reset \
+sim:/circuito_exp5_tb_erro_rodada4/iniciar \
+sim:/circuito_exp5_tb_erro_rodada4/chaves \
+sim:/circuito_exp5_tb_erro_rodada4/pronto \
+sim:/circuito_exp5_tb_erro_rodada4/db_igual \
+sim:/circuito_exp5_tb_erro_rodada4/acertou \
+sim:/circuito_exp5_tb_erro_rodada4/errou \
+sim:/circuito_exp5_tb_erro_rodada4/leds \
+sim:/circuito_exp5_tb_erro_rodada4/db_timeout \
+sim:/circuito_exp5_tb_erro_rodada4/db_contagem \
+sim:/circuito_exp5_tb_erro_rodada4/db_memoria \
+sim:/circuito_exp5_tb_erro_rodada4/db_estado \
+sim:/circuito_exp5_tb_erro_rodada4/db_jogadafeita \
+sim:/circuito_exp5_tb_erro_rodada4/db_limite \
+sim:/circuito_exp5_tb_erro_rodada4/db_tem_jogada \
+sim:/circuito_exp5_tb_erro_rodada4/db_endmenorquelimite \
+sim:/circuito_exp5_tb_erro_rodada4/db_clock \
+sim:/circuito_exp5_tb_erro_rodada4/rom_jogadas \
+sim:/circuito_exp5_tb_erro_rodada4/i \
+sim:/circuito_exp5_tb_erro_rodada4/jogadas_na_rodada \
+sim:/circuito_exp5_tb_erro_rodada4/rodada
+do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/rodada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/clock'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/chaves'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/iniciar'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/reset'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_tem_jogada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/pronto'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/acertou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/errou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_timeout'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/leds'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_igual'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_limite_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_erro_rodada4/dut/db_limite_fio \
+sim:/circuito_exp5_tb_erro_rodada4/dut/db_estado_fio \
+sim:/circuito_exp5_tb_erro_rodada4/dut/db_memoria_fio \
+sim:/circuito_exp5_tb_erro_rodada4/dut/db_contagem_fio \
+sim:/circuito_exp5_tb_erro_rodada4/dut/db_jogada_fio
+run -all
+# fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v(135)
+#    Time: 141 ms  Iteration: 0  Instance: /circuito_exp5_tb_erro_rodada4
+# Break in Module circuito_exp5_tb_erro_rodada4 at C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v line 135
+quit -sim
+# End time: 03:38:40 on Feb 02,2025, Elapsed time: 0:05:33
+# Errors: 0, Warnings: 2
+vsim -gui work.circuito_exp5_tb_timeout
+# vsim -gui work.circuito_exp5_tb_timeout 
+# Start time: 03:38:56 on Feb 02,2025
+# Loading work.circuito_exp5_tb_timeout
+# Loading work.circuito_exp5
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.contador_m
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v(37).
+#    Time: 0 ns  Iteration: 0  Instance: /circuito_exp5_tb_timeout/dut/uc File: C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v Line: 51
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_timeout/acertou \
+sim:/circuito_exp5_tb_timeout/chaves \
+sim:/circuito_exp5_tb_timeout/clock \
+sim:/circuito_exp5_tb_timeout/clockPeriod \
+sim:/circuito_exp5_tb_timeout/db_clock \
+sim:/circuito_exp5_tb_timeout/db_contagem \
+sim:/circuito_exp5_tb_timeout/db_endmenorquelimite \
+sim:/circuito_exp5_tb_timeout/db_estado \
+sim:/circuito_exp5_tb_timeout/db_igual \
+sim:/circuito_exp5_tb_timeout/db_jogadafeita \
+sim:/circuito_exp5_tb_timeout/db_limite \
+sim:/circuito_exp5_tb_timeout/db_memoria \
+sim:/circuito_exp5_tb_timeout/db_tem_jogada \
+sim:/circuito_exp5_tb_timeout/db_timeout \
+sim:/circuito_exp5_tb_timeout/errou \
+sim:/circuito_exp5_tb_timeout/i \
+sim:/circuito_exp5_tb_timeout/iniciar \
+sim:/circuito_exp5_tb_timeout/jogadas_na_rodada \
+sim:/circuito_exp5_tb_timeout/leds \
+sim:/circuito_exp5_tb_timeout/pronto \
+sim:/circuito_exp5_tb_timeout/reset \
+sim:/circuito_exp5_tb_timeout/rodada \
+sim:/circuito_exp5_tb_timeout/rom_jogadas
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb_timeout/dut/db_contagem_fio \
+sim:/circuito_exp5_tb_timeout/dut/db_estado_fio \
+sim:/circuito_exp5_tb_timeout/dut/db_jogada_fio \
+sim:/circuito_exp5_tb_timeout/dut/db_limite_fio \
+sim:/circuito_exp5_tb_timeout/dut/db_memoria_fio \
+sim:/circuito_exp5_tb_timeout/dut/db_timeout_fio
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+run -all
+# fim da simulacao
+# ** Note: $stop    : C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v(134)
+#    Time: 3201 ms  Iteration: 0  Instance: /circuito_exp5_tb_timeout
+# Break in Module circuito_exp5_tb_timeout at C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v line 134
+do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/rodada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 3
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/clock'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 4
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/chaves'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 6
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/iniciar'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 7
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/reset'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_tem_jogada'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/pronto'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/acertou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/errou'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 14
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_timeout'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/leds'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 17
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/db_igual'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 19
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_contagem_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_estado_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_jogada_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_limite_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
+# Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24

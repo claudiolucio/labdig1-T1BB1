@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 
-module circuito_exp5_tb;
+module circuito_exp5_tb_timeout;
 
     // Entradas
     reg clock;

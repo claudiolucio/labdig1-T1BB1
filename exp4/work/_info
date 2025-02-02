@@ -102,7 +102,7 @@ R11
 R4
 R5
 vcircuito_exp5
-Z12 !s110 1738475065
+Z12 !s110 1738476659
 !i10b 1
 !s100 NMVYEoe6Ig:RaO:a65a<f1
 R0
@@ -112,13 +112,13 @@ R2
 w1738472863
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v
-!i122 270
+!i122 284
 L0 1 107
 R3
 r1
 !s85 0
 31
-Z13 !s108 1738475065.000000
+Z13 !s108 1738476659.000000
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5.v|
 !i113 1
@@ -135,7 +135,7 @@ R2
 w1738475034
 8C:\Users\claud\OneDrive\Documentos\labdig\exp5\circuito_exp5_tb.v
 FC:\Users\claud\OneDrive\Documentos\labdig\exp5\circuito_exp5_tb.v
-!i122 271
+!i122 285
 L0 3 118
 R3
 r1
@@ -147,6 +147,75 @@ R13
 !i113 1
 R4
 R5
+vcircuito_exp5_tb_erro_rodada4
+Z14 !s110 1738476662
+!i10b 1
+!s100 zSHYTI1ijS4k`i?zJV?ec3
+R0
+IgOUh@WGQ[n7LlLXk_ibi61
+R1
+R2
+w1738476187
+8C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v
+FC:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v
+!i122 298
+L0 3 135
+R3
+r1
+!s85 0
+31
+Z15 !s108 1738476662.000000
+!s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-erro_rodada4.v|
+!i113 1
+R4
+R5
+vcircuito_exp5_tb_reiniciando_jogo
+R14
+!i10b 1
+!s100 mP^Q0eXeRObjWJ4zdg`nj1
+R0
+IVMo5gUXO0Udk0n@1BVCz@0
+R1
+R2
+w1738475900
+8C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v
+FC:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v
+!i122 299
+L0 3 132
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-reiniciando_jogo.v|
+!i113 1
+R4
+R5
+vcircuito_exp5_tb_timeout
+R14
+!i10b 1
+!s100 25l=LiDO4OI_dHzSP6lgl0
+R0
+I0]cL1?BR6Cm5HoTZM6e170
+R1
+R2
+w1738476485
+8C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v
+FC:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v
+!i122 300
+L0 3 134
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/circuito_exp5_tb-timeout_rodada3.v|
+!i113 1
+R4
+R5
 vcomparador_85
 R12
 !i10b 1
@@ -155,10 +224,10 @@ R0
 IoOg2[]@4m]OzLzkUHjJ^H0
 R1
 R2
-Z14 w1736771448
+Z16 w1736771448
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/comparador_85.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/comparador_85.v
-!i122 272
+!i122 286
 L0 16 14
 R3
 r1
@@ -178,10 +247,10 @@ R0
 I5Y<F2:VTHGY7Y@DBa4Eig0
 R1
 R2
-R14
+R16
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_163.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_163.v
-!i122 273
+!i122 287
 L0 16 16
 R3
 r1
@@ -194,17 +263,17 @@ R13
 R4
 R5
 vcontador_m
-Z15 !s110 1738475066
+Z17 !s110 1738476660
 !i10b 1
 !s100 BLMf5@WIC9E7[2]V7T:]00
 R0
 IB`mz1W5Den:[`:NR?A[S10
 R1
 R2
-Z16 w1737808470
+Z18 w1737808470
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m.v
-!i122 274
+!i122 288
 L0 20 37
 R3
 r1
@@ -217,53 +286,53 @@ R13
 R4
 R5
 vcontador_m_tb
-R15
+R17
 !i10b 1
 !s100 N4:^mcMBZJ`g1JbG1;12?1
 R0
 I;md0okEYiR<TEOGTC4`Eh1
 R1
 R2
-R16
+R18
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m_tb.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m_tb.v
-!i122 275
+!i122 289
 L0 20 89
 R3
 r1
 !s85 0
 31
-Z17 !s108 1738475066.000000
+Z19 !s108 1738476660.000000
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/contador_m_tb.v|
 !i113 1
 R4
 R5
 vedge_detector
-R15
+R17
 !i10b 1
 !s100 b=6PQ:nFojW4z?d;AGW=D0
 R0
 I43Z>7[7>Xj^bzlLZXLG=c0
 R1
 R2
-R16
+R18
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/edge_detector.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/edge_detector.v
-!i122 276
+!i122 290
 L0 21 23
 R3
 r1
 !s85 0
 31
-R17
+R19
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/edge_detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/edge_detector.v|
 !i113 1
 R4
 R5
 vfluxo_dados
-R15
+R17
 !i10b 1
 !s100 63YN=44R1Y`4I:I`f[3UE3
 R0
@@ -273,20 +342,20 @@ R2
 w1738472787
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/fluxo_dados.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/fluxo_dados.v
-!i122 277
+!i122 291
 L0 1 121
 R3
 r1
 !s85 0
 31
-R17
+R19
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/fluxo_dados.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/fluxo_dados.v|
 !i113 1
 R4
 R5
 vhexa7seg
-R15
+R17
 !i10b 1
 !s100 ^ldcN:Zl`^?4Tnh8I@Z332
 R0
@@ -296,66 +365,66 @@ R2
 w1736771451
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/hexa7seg.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/hexa7seg.v
-!i122 278
+!i122 292
 L0 23 38
 R3
 r1
 !s85 0
 31
-R17
+R19
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/hexa7seg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/hexa7seg.v|
 !i113 1
 R4
 R5
 vmux2x1
-!s110 1738475075
+Z20 !s110 1738476661
 !i10b 1
 !s100 M`PWWJioUd<IOY3XDnVS[1
 R0
 I3mjcln;L:3g1V]92NOM6N2
 R1
 R2
-Z18 w1738430666
+Z21 w1738430666
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1.v
-!i122 279
+!i122 293
 L0 18 16
 R3
 r1
 !s85 0
 31
-!s108 1738475075.000000
+Z22 !s108 1738476661.000000
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1.v|
 !i113 1
 R4
 R5
 vmux2x1_tb
-Z19 !s110 1738475076
+R20
 !i10b 1
 !s100 zjRWHJJIajAi<`DZhfX==3
 R0
 I]o199lg4i=b48O=gZFjj_1
 R1
 R2
-R18
+R21
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1_tb.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1_tb.v
-!i122 280
+!i122 294
 L0 17 56
 R3
 r1
 !s85 0
 31
-Z20 !s108 1738475076.000000
+R22
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/mux2x1_tb.v|
 !i113 1
 R4
 R5
 vregistrador_4
-R19
+R20
 !i10b 1
 !s100 45NaE0zN5R1c;nb0e8L`23
 R0
@@ -365,20 +434,20 @@ R2
 w1737203020
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/registrador_4.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/registrador_4.v
-!i122 281
+!i122 295
 L0 13 20
 R3
 r1
 !s85 0
 31
-R20
+R22
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/registrador_4.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/registrador_4.v|
 !i113 1
 R4
 R5
 vsync_rom_16x4
-R19
+R20
 !i10b 1
 !s100 Tz6@dY^L3ZzVgc74FVX5T1
 R0
@@ -388,13 +457,13 @@ R2
 w1737986310
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/sync_rom_16x4.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/sync_rom_16x4.v
-!i122 282
+!i122 296
 L0 13 27
 R3
 r1
 !s85 0
 31
-R20
+R22
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/sync_rom_16x4.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/sync_rom_16x4.v|
 !i113 1
@@ -424,7 +493,7 @@ r1
 R4
 R5
 vunidade_controle
-R19
+R14
 !i10b 1
 !s100 =i]=Z;<N72RmO06bIjlaX0
 R0
@@ -434,13 +503,13 @@ R2
 w1738471337
 8C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v
 FC:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v
-!i122 283
+!i122 297
 L0 16 109
 R3
 r1
 !s85 0
 31
-R20
+R15
 !s107 C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/claud/OneDrive/Documentos/labdig/exp5/unidade_controle.v|
 !i113 1

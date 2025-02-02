@@ -21,9 +21,9 @@ add wave -noupdate -height 30 -radix unsigned /circuito_exp5_tb/dut/db_contagem_
 add wave -noupdate -height 30 -radix hexadecimal /circuito_exp5_tb/dut/db_estado_fio
 add wave -noupdate -height 30 -radix binary /circuito_exp5_tb/dut/db_jogada_fio
 add wave -noupdate -height 30 -radix unsigned /circuito_exp5_tb/dut/db_limite_fio
-add wave -noupdate -height 30 -radix unsigned /circuito_exp5_tb/dut/db_memoria_fio
+add wave -noupdate -height 30 -radix binary /circuito_exp5_tb/dut/db_memoria_fio
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ns} 0}
+WaveRestoreCursors {{Cursor 1} {419655503 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 247
 configure wave -valuecolwidth 100
@@ -39,4 +39,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {1528800 us}
+WaveRestoreZoom {385110184 ns} {546376758 ns}

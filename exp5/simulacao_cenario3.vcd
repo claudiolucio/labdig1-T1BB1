@@ -1,0 +1,25 @@
+$date
+	Sun Feb 02 03:38:23 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ns
+$end
+$scope module circuito_exp5_tb_erro_rodada4 $end
+$var integer 32 ! rodada $end
+$upscope $end
+$enddefinitions $end
+#0
+bx !
+#11000000
+b1 !
+#26000000
+b10 !
+#51000000
+b11 !
+#86000000
+b100 !
+#116000000
+b1 !
