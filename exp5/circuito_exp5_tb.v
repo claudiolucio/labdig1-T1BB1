@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb_circuito_exp5;
+module circuito_exp5_tb;
 
     // Entradas
     reg clock;
@@ -48,35 +48,37 @@ module tb_circuito_exp5;
 
     // ROM de jogadas (usada para fornecer entradas ao DUT)
     reg [3:0] rom_jogadas [0:15];
-    integer i;
+    integer i, jogadas_na_rodada, rodada;
 
     // Clock com 1kHz
     parameter clockPeriod = 1_000_000; 
-    always #((clockPeriod / 2)) clock = ~clock;
 
     // ROM com as jogadas
     initial begin
-        rom_jogadas[0]  = 4'b0001; // 1
-        rom_jogadas[1]  = 4'b0010; // 2
-        rom_jogadas[2]  = 4'b0100; // 3
-        rom_jogadas[3]  = 4'b1000; // 4
-        rom_jogadas[4]  = 4'b0100; // 5
-        rom_jogadas[5]  = 4'b0010; // 6
-        rom_jogadas[6]  = 4'b0001; // 7
-        rom_jogadas[7]  = 4'b0001; // 8
-        rom_jogadas[8]  = 4'b0010; // 9
-        rom_jogadas[9]  = 4'b0010; // 10
-        rom_jogadas[10] = 4'b0100; // 11
-        rom_jogadas[11] = 4'b0100; // 12
-        rom_jogadas[12] = 4'b1000; // 13
-        rom_jogadas[13] = 4'b1000; // 14
-        rom_jogadas[14] = 4'b0001; // 15
-        rom_jogadas[15] = 4'b0100; // 16
+        rom_jogadas[0]  = 4'b0001; // Jogada 1
+        rom_jogadas[1]  = 4'b0010; // Jogada 2
+        rom_jogadas[2]  = 4'b0100; // Jogada 3
+        rom_jogadas[3]  = 4'b1000; // Jogada 4
+        rom_jogadas[4]  = 4'b0100; // Jogada 5
+        rom_jogadas[5]  = 4'b0010; // Jogada 6
+        rom_jogadas[6]  = 4'b0001; // Jogada 7
+        rom_jogadas[7]  = 4'b0001; // Jogada 8
+        rom_jogadas[8]  = 4'b0010; // Jogada 9
+        rom_jogadas[9]  = 4'b0010; // Jogada 10
+        rom_jogadas[10] = 4'b0100; // Jogada 11
+        rom_jogadas[11] = 4'b0100; // Jogada 12
+        rom_jogadas[12] = 4'b1000; // Jogada 13
+        rom_jogadas[13] = 4'b1000; // Jogada 14
+        rom_jogadas[14] = 4'b0001; // Jogada 15
+        rom_jogadas[15] = 4'b0100; // Jogada 16
     end
+ 
+     always #((clockPeriod / 2)) clock = ~clock;
 
     // Testbench principal
     initial begin
         // Inicializa as entradas
+        clock = 0;
         reset = 1;
         iniciar = 0;
         chaves = 4'b0000;
@@ -90,13 +92,27 @@ module tb_circuito_exp5;
         #(clockPeriod);
         iniciar = 0;
 
-        // Aplica as jogadas da ROM ao DUT
-        for (i = 0; i < 16; i = i + 1) begin
-            chaves = rom_jogadas[i]; 
-            #(10*clockPeriod);
-            chaves = 4'b0000; 
-            #(5*clockPeriod);
-        end
-    end
+        // Aplica jogadas por rodada
+        rodada = 1;
+        while (rodada <= 16 && !errou) begin
+            jogadas_na_rodada = rodada;
 
+            // Espera pelo sinal "pronto"
+            while (!pronto) #(clockPeriod);
+
+            // Aplica as jogadas da rodada
+            for (i = 0; i < jogadas_na_rodada; i = i + 1) begin
+                chaves = rom_jogadas[i]; 
+                #(5 * clockPeriod);
+                chaves = 4'b0000; 
+                #(5 * clockPeriod);
+            end
+
+            // Incrementa rodada
+            rodada = rodada + 1;
+        end
+
+        // Fim do teste
+        $finish;
+    end
 endmodule

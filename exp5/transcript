@@ -1,0 +1,79 @@
+# Compile of circuito_exp5.v was successful.
+# Compile of circuito_exp5_tb.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of mux2x1.v was successful.
+# Compile of mux2x1_tb.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp5_tb
+# vsim -gui work.circuito_exp5_tb 
+# Start time: 01:27:51 on Feb 02,2025
+# Loading work.circuito_exp5_tb
+# Loading work.circuito_exp5
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.contador_m
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/Welton/OneDrive/Documentos/USP/labdig1-T1BB1/exp5/unidade_controle.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_exp5_tb/dut/uc File: C:/Users/Welton/OneDrive/Documentos/USP/labdig1-T1BB1/exp5/circuito_exp5.v Line: 51
+# Load canceled
+run
+# Compile of circuito_exp5.v was successful.
+# Compile of circuito_exp5_tb.v was successful.
+# Compile of comparador_85.v was successful.
+# Compile of contador_163.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of contador_m_tb.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of fluxo_dados.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of mux2x1.v was successful.
+# Compile of mux2x1_tb.v was successful.
+# Compile of registrador_4.v was successful.
+# Compile of sync_rom_16x4.v was successful.
+# Compile of unidade_controle.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.circuito_exp5_tb
+# End time: 01:29:34 on Feb 02,2025, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 4
+# vsim -gui work.circuito_exp5_tb 
+# Start time: 01:29:34 on Feb 02,2025
+# Loading work.circuito_exp5_tb
+# Loading work.circuito_exp5
+# Loading work.fluxo_dados
+# Loading work.contador_163
+# Loading work.comparador_85
+# Loading work.registrador_4
+# Loading work.sync_rom_16x4
+# Loading work.edge_detector
+# Loading work.contador_m
+# Loading work.unidade_controle
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (4) for port 'db_timeout_uc'. The port definition is at: C:/Users/Welton/OneDrive/Documentos/USP/labdig1-T1BB1/exp5/unidade_controle.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_exp5_tb/dut/uc File: C:/Users/Welton/OneDrive/Documentos/USP/labdig1-T1BB1/exp5/circuito_exp5.v Line: 51
+# Load canceled
+add wave -position insertpoint  \
+sim:/circuito_exp5_tb/clock \
+sim:/circuito_exp5_tb/reset \
+sim:/circuito_exp5_tb/iniciar \
+sim:/circuito_exp5_tb/chaves \
+sim:/circuito_exp5_tb/pronto \
+sim:/circuito_exp5_tb/db_igual \
+sim:/circuito_exp5_tb/acertou \
+sim:/circuito_exp5_tb/errou
+run
+# End time: 01:32:31 on Feb 02,2025, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 2
