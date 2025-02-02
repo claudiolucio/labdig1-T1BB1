@@ -3,8 +3,8 @@ module fluxo_dados (
     input  [3:0]  chaves,
     input         zeraR,
     input         registraR,
-    input         contaC,
-    input         zeraC,
+    input         contaE,
+    input         zeraE,
     input         zera_timer,
     input         conta_timer,
     input         contaL,
@@ -66,7 +66,7 @@ module fluxo_dados (
     );
 
     //comparador_85 limite
-    comparador_85 comparadorlimite (
+    comparador_85 comparadorlimite(
       .A   ( s_limite ),
       .B   ( s_endereco ),
       .ALBi( 1'b0 ),

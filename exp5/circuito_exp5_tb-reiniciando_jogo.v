@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 
-module circuito_exp5_tb;
+module circuito_exp5_tb_reiniciando_jogo;
 
     // Entradas
     reg clock;
@@ -112,6 +112,20 @@ module circuito_exp5_tb;
         #(5 * clockPeriod);
         iniciar = 0;
         #(20 * clockPeriod);
+
+        // Aplica jogadas por rodada de novo
+        
+        for (rodada = 1; rodada < 17; rodada = rodada + 1) begin
+            jogadas_na_rodada = rodada;
+            #(5 * clockPeriod);
+            // Aplica as jogadas da rodada
+            for (i = 0; i < jogadas_na_rodada; i = i + 1) begin
+                chaves = rom_jogadas[i]; 
+                #(5 * clockPeriod);
+                chaves = 4'b0000; 
+                #(5 * clockPeriod);
+            end
+        end
 
         // Final do testbench
       $display("fim da simulacao");

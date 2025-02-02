@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 
-module circuito_exp5_tb;
+module circuito_exp5_tb_erro_rodada4;
 
     // Entradas
     reg clock;
@@ -94,7 +94,7 @@ module circuito_exp5_tb;
 
         // Aplica jogadas por rodada
         
-        for (rodada = 1; rodada < 17; rodada = rodada + 1) begin
+        for (rodada = 1; rodada < 4; rodada = rodada + 1) begin
             jogadas_na_rodada = rodada;
             #(5 * clockPeriod);
             // Aplica as jogadas da rodada
@@ -105,6 +105,23 @@ module circuito_exp5_tb;
                 #(5 * clockPeriod);
             end
         end
+
+        // errando a rodada 4
+        chaves = 4'b0001;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
+        chaves = 4'b0010;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);    
+
+        chaves = 4'b0010; //erro
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
 
         // Reinicia o jogo
         rodada = 1;

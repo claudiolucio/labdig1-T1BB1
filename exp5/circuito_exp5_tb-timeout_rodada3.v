@@ -94,7 +94,7 @@ module circuito_exp5_tb;
 
         // Aplica jogadas por rodada
         
-        for (rodada = 1; rodada < 17; rodada = rodada + 1) begin
+        for (rodada = 1; rodada < 3; rodada = rodada + 1) begin
             jogadas_na_rodada = rodada;
             #(5 * clockPeriod);
             // Aplica as jogadas da rodada
@@ -105,6 +105,22 @@ module circuito_exp5_tb;
                 #(5 * clockPeriod);
             end
         end
+
+        // timeout na rodada 3
+        chaves = 4'b0001;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
+        chaves = 4'b0010;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(3100 * clockPeriod); //demora pra jogar
+
+        chaves = 4'b0010; 
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
 
         // Reinicia o jogo
         rodada = 1;
