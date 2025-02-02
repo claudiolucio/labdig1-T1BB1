@@ -20,7 +20,7 @@ module circuito_exp5 (
 );
 
 wire zeraR, zeraE, contaE, contaL, zeraL, registraR, igual, fimE, jogada_feita, fim_timer_fio, zera_timer_fio, conta_timer_fio, fim_sequencia, ultima_sequencia; 
-wire [3:0] db_jogada_fio, db_contagem_fio, db_memoria_fio, db_estado_fio, db_limite_fio, db_timeout_fio;
+wire [3:0] db_jogada_fio, db_contagem_fio, db_memoria_fio, db_estado_fio, db_limite_fio;
 
 
 fluxo_dados fd (
@@ -41,7 +41,7 @@ fluxo_dados fd (
     .db_tem_jogada ( db_tem_jogada ),
     .fim_sequencia( fim_sequencia ),
     .ultima_sequencia( ultima_sequencia ),
-    .db_endmenorquelimite( db_endmenorquelimite ),
+    .db_endmenorquelimite( endmenorquelimite ),
     .db_limite( db_limite_fio ),
     .db_contagem( db_contagem_fio ),
     .db_jogada ( db_jogada_fio ),
@@ -69,8 +69,7 @@ unidade_controle uc(
     .zeraL ( zeraL ),
     .acertou_out ( acertou ),
     .errou_out ( errou ),
-    .db_estado( db_estado_fio ),
-	 .db_timeout_uc( db_timeout_fio )
+    .db_estado( db_estado_fio )
 );
 
 hexa7seg HEX2(
@@ -99,7 +98,6 @@ hexa7seg HEX5(
     .display( db_estado )
 );
 
-assign db_timeout = db_timeout_fio;
 assign db_igual = igual;
 assign db_clock = clock;
 assign leds = db_jogada_fio;

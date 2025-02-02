@@ -1,0 +1,15 @@
+
+State Machine - |circuito_exp5|unidade_controle:uc|Eatual
+Name Eatual.errou Eatual.timeout Eatual.acertou Eatual.proxima_sequencia Eatual.avalia_sequencia Eatual.proxima_jogada Eatual.comparacao Eatual.registra Eatual.espera Eatual.inicia_sequencia Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 0 0 0 0 0 1 1 
+Eatual.inicia_sequencia 0 0 0 0 0 0 0 0 0 1 0 1 
+Eatual.espera 0 0 0 0 0 0 0 0 1 0 0 1 
+Eatual.registra 0 0 0 0 0 0 0 1 0 0 0 1 
+Eatual.comparacao 0 0 0 0 0 0 1 0 0 0 0 1 
+Eatual.proxima_jogada 0 0 0 0 0 1 0 0 0 0 0 1 
+Eatual.avalia_sequencia 0 0 0 0 1 0 0 0 0 0 0 1 
+Eatual.proxima_sequencia 0 0 0 1 0 0 0 0 0 0 0 1 
+Eatual.acertou 0 0 1 0 0 0 0 0 0 0 0 1 
+Eatual.timeout 0 1 0 0 0 0 0 0 0 0 0 1 
+Eatual.errou 1 0 0 0 0 0 0 0 0 0 0 1 

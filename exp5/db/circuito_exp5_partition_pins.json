@@ -1,0 +1,177 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pronto",
+					"strict" : false
+				},
+				{
+					"name" : "db_igual",
+					"strict" : false
+				},
+				{
+					"name" : "acertou",
+					"strict" : false
+				},
+				{
+					"name" : "errou",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_jogadafeita[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_limite[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tem_jogada",
+					"strict" : false
+				},
+				{
+					"name" : "db_clock",
+					"strict" : false
+				},
+				{
+					"name" : "chaves[0]",
+					"strict" : false
+				},
+				{
+					"name" : "chaves[1]",
+					"strict" : false
+				},
+				{
+					"name" : "chaves[2]",
+					"strict" : false
+				},
+				{
+					"name" : "chaves[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
