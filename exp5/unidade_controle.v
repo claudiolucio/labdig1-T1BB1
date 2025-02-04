@@ -99,7 +99,7 @@ module unidade_controle (
         contaE    = (Eatual == proxima_jogada) ? 1'b1 : 1'b0;
         contaL    = (Eatual == proxima_sequencia ) ? 1'b1 : 1'b0;
         pronto    = (Eatual == acertou || Eatual == errou || Eatual == timeout) ? 1'b1 : 1'b0;
-        db_timeout_uc = (Eatual == timeout) ? 7'b0001111 : 8'b0;
+        db_timeout_uc = (Eatual == timeout) ? 7'b0000111 : 7'b1111111;
         acertou_out = (Eatual == acertou) ? 1'b1 : 1'b0;
         errou_out = (Eatual == errou) ? 1'b1 : 1'b0;
 

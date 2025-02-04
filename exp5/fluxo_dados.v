@@ -9,6 +9,7 @@ module fluxo_dados (
     input         conta_timer,
     input         contaL,
     input         zeraL,
+	 input			sel_nivel,
     output        igual,
     output        fimE,
     output        fim_timer,
@@ -27,9 +28,11 @@ module fluxo_dados (
 	  wire   [3:0] s_limite;
     wire   [3:0] s_dado;
     wire   [3:0] s_chaves;
+	 wire fim, meio;
+	 
     
 
-    // contador_m
+    // contador_163
     contador_163 contador_endereco ( 
       .clock( clock ),
       .clr  ( ~zeraE ),
@@ -54,16 +57,23 @@ module fluxo_dados (
     );
 
     // contador_m limite
-    contador_163 contador_limite (
+    contador_m #(.M(16), .N(4)) contador_limite  (
       .clock( clock ),
-      .clr  ( ~zeraL ),	 
-      .ld   ( 1'b1 ),
-      .ent  ( 1'b1 ),
-      .enp  ( contaL ),
-      .D    ( 4'b0 ),
+      .zera_s  ( zeraL ),
+		.zera_as(1'b0),
+		.conta(contaL),
       .Q    ( s_limite ),
-      .rco  ( ultima_sequencia )
+      .fim  ( fim ),
+		.meio ( meio )
     );
+	 
+	 mux2x1 seletor_nivel(
+		.D0( meio ),
+		.D1( fim ),
+		.SEL(sel_nivel),
+		.OUT(ultima_sequencia)
+	);
+
 
     //comparador_85 limite
     comparador_85 comparadorlimite(
@@ -102,7 +112,7 @@ module fluxo_dados (
     );
 
     //contador timeout
-    contador_m #(.M(3000), .N(12)) contador_timeout (
+    contador_m #(.M(5000), .N(13)) contador_timeout (
         .clock(clock),
         .zera_as(1'b0),
         .zera_s(zera_timer),
