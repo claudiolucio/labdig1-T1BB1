@@ -1,11 +1,12 @@
 `timescale 1ns / 1ns
 
-module circuito_exp5_tb_timeout;
+module circuito_exp5_tb_acertou_rodada8;
 
     // Entradas
     reg clock;
     reg reset;
     reg iniciar;
+    reg sel_nivel;
     reg [3:0] chaves;
 
     // Saídas
@@ -35,6 +36,7 @@ module circuito_exp5_tb_timeout;
         .acertou(acertou),
         .errou(errou),
         .leds(leds),
+        .sel_nivel(sel_nivel),
         .db_timeout(db_timeout),
         .db_contagem(db_contagem),
         .db_memoria(db_memoria),
@@ -79,10 +81,11 @@ module circuito_exp5_tb_timeout;
     initial begin
         // Inicializa as entradas
         clock = 0;
+        sel_nivel = 0;
         reset = 1;
         iniciar = 0;
         chaves = 4'b0000;
-s
+
         // Aguarda e libera o reset
         #(clockPeriod * 10);
         reset = 0;
@@ -94,7 +97,7 @@ s
 
         // Aplica jogadas por rodada
         
-        for (rodada = 1; rodada < 3; rodada = rodada + 1) begin
+        for (rodada = 1; rodada < 8; rodada = rodada + 1) begin
             jogadas_na_rodada = rodada;
             #(5 * clockPeriod);
             // Aplica as jogadas da rodada
@@ -106,7 +109,7 @@ s
             end
         end
 
-        // timeout na rodada 3
+        // acertando as 8 rodadas
         chaves = 4'b0001;
         #(5 * clockPeriod);
         chaves = 4'b0000;
@@ -115,13 +118,38 @@ s
         chaves = 4'b0010;
         #(5 * clockPeriod);
         chaves = 4'b0000;
-        #(3100 * clockPeriod); //demora pra jogar
+        #(5 * clockPeriod);    
+
+        chaves = 4'b0100; 
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
+        chaves = 4'b1000;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
+        chaves = 4'b0100;
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);    
 
         chaves = 4'b0010; 
         #(5 * clockPeriod);
         chaves = 4'b0000;
         #(5 * clockPeriod);
 
+        chaves = 4'b0001; 
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+
+        chaves = 4'b0001; 
+        #(5 * clockPeriod);
+        chaves = 4'b0000;
+        #(5 * clockPeriod);
+        
         // Reinicia o jogo
         rodada = 1;
         iniciar = 1;

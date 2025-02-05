@@ -658,3 +658,5 @@ do C:/Users/claud/OneDrive/Documentos/labdig/exp5/wave.do
 # Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 23
 # ** UI-Msg: (vish-4014) No objects found matching '/circuito_exp5_tb/dut/db_memoria_fio'.
 # Executing ONERROR command at macro C:\Users\claud\OneDrive\Documentos\labdig\exp5\wave.do line 24
+# End time: 12:58:28 on Feb 02,2025, Elapsed time: 9:19:32
+# Errors: 0, Warnings: 2
