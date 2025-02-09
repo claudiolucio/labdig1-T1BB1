@@ -111,6 +111,7 @@ estado7seg HEX(
     .display( db_estado )
 );
 
+assign leds = db_memoria_fio;
 assign db_timeout = db_timeout_fio;
 assign db_igual = igual;
 assign db_clock = clock;
