@@ -19,13 +19,13 @@
 #
 # Quartus Prime
 # Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-# Date created = 20:19:50  February 01, 2025
+# Date created = 22:40:09  February 08, 2025
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "20.1"
-DATE = "20:19:50  February 01, 2025"
+DATE = "22:40:09  February 08, 2025"
 
 # Revisions
 
-PROJECT_REVISION = "circuito_exp5"
+PROJECT_REVISION = "circuito_exp6"

@@ -24,7 +24,7 @@ module mux2x1_tb;
     wire OUT;
     
     // Instanciacao do DUT
-    mux2x1 mux_inst (
+    mux2x1_n mux_inst (
         .D0  ( D0  ),
         .D1  ( D1  ),
         .SEL ( SEL ),

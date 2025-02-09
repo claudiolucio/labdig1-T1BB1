@@ -1,0 +1,20 @@
+
+State Machine - |circuito_exp6|unidade_controle:uc|Eatual
+Name Eatual.timeout Eatual.errou Eatual.proxima_sequencia Eatual.avalia_sequencia Eatual.proxima_jogada Eatual.acertou Eatual.registra Eatual.espera Eatual.proxima_posicao Eatual.mostra_apagado Eatual.zera_leds Eatual.mostra_dado Eatual.carrega_dados Eatual.inicia_sequencia Eatual.preparacao Eatual.inicial Eatual.comparacao 
+Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+Eatual.inicia_sequencia 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+Eatual.carrega_dados 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+Eatual.mostra_dado 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+Eatual.zera_leds 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
+Eatual.mostra_apagado 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
+Eatual.proxima_posicao 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+Eatual.espera 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+Eatual.registra 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
+Eatual.acertou 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.proxima_jogada 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.avalia_sequencia 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.proxima_sequencia 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.errou 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.timeout 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+Eatual.comparacao 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
