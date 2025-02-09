@@ -3,15 +3,20 @@ module fluxo_dados (
     input  [3:0]  chaves,
     input         zeraR,
     input         registraR,
+	  input 			  limpaM,
+	  input 			  registraM,
     input         contaE,
     input         zeraE,
     input         zera_timer,
+	  input 			  zera_timer_leds,
     input         conta_timer,
+	  input			    conta_timer_leds,
     input         contaL,
     input         zeraL,
-	 input			sel_nivel,
+	  input			    sel_nivel,
     output        igual,
     output        fimE,
+	  output 			  fim_timer_leds,
     output        fim_timer,
     output        jogada_feita,
     output        fim_sequencia,
@@ -19,7 +24,6 @@ module fluxo_dados (
     output        db_endmenorquelimite,
     output        db_tem_jogada,
     output [3:0]  db_limite, // sinal de depuracao para identificar o limite atual
-    output [3:0]  db_jogada,
     output [3:0]  db_contagem,
     output [3:0]  db_memoria
 );
@@ -121,9 +125,27 @@ module fluxo_dados (
         .Q(),
         .meio()
     );
-
-    assign db_memoria = s_dado;
-    assign db_jogada = s_chaves;
+	 
+	 //Temporizador leds
+	 contador_m #(.M(500), .N(9)) temporizador_leds (
+	 .clock( clock ),
+	 .zera_as( 1'b0),
+	 .zera_s(    ),
+	 .fim( fim_timer_leds ),
+	 .conta( conta_timer_leds ),
+	 .Q(),
+	 .meio()
+	 );
+	 
+	 //Registrador memória
+	 registrador_4 reg_mem(
+	 .clock( clock ),
+    .clear( limpaM ),
+    .enable( registraM ),
+    .Q( db_memoria ),
+    .D( s_dado )
+	 );
+	 
     assign db_limite = s_limite;
     assign db_contagem = s_endereco;
     assign db_tem_jogada = chaves[3] | chaves[2] | chaves[1] | chaves[0];

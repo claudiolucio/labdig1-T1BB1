@@ -1,7 +1,7 @@
-module circuito_exp5 (
+module circuito_exp6 (
  input clock,
  input reset,
- input iniciar,
+ input jogar,
  input [3:0] chaves,
  output pronto,
  output db_igual,
@@ -19,9 +19,11 @@ module circuito_exp5 (
  output db_clock
 );
 
-wire zeraR, zeraE, contaE, contaL, zeraL, registraR, igual, fimE, jogada_feita, fim_timer_fio, zera_timer_fio, conta_timer_fio, fim_sequencia, ultima_sequencia; 
-wire [3:0] db_jogada_fio, db_contagem_fio, db_memoria_fio, db_estado_fio, db_limite_fio, db_timeout_fio;
-
+wire zeraR, zeraE, contaE, contaL, zeraL, registraR, igual, fimE, jogada_feita, fim_timer_fio, zera_timer_fio, conta_timer_fio, fim_sequencia, ultima_sequencia;
+wire fim_timer_leds_fio, zera_timer_leds_fio, conta_timer_leds_fio, registraM_fio, limpaM_fio; 
+wire [3:0] db_jogada_fio, db_contagem_fio, db_memoria_fio, db_limite_fio; 
+wire [6:0] db_timeout_fio;
+wire [4:0] db_estado_fio;
 
 fluxo_dados fd (
     .clock( clock ),
@@ -45,13 +47,18 @@ fluxo_dados fd (
     .db_limite( db_limite_fio ),
     .db_contagem( db_contagem_fio ),
     .db_jogada ( db_jogada_fio ),
-    .db_memoria( db_memoria_fio )
+    .db_memoria( db_memoria_fio ),
+    .limpaM( limpaM_fio ),
+    .RegistraM( registraM_fio ),
+    .zera_timer_leds( zera_timer_leds_fio ),
+    .conta_timer_leds( conta_timer_leds_fio ),
+    .fim_timer_leds( fim_timer_leds_fio )
 );
 
 unidade_controle uc(
     .clock( clock ),
     .reset( reset ),
-    .iniciar( iniciar ), 
+    .jogar( jogar ), 
     .igual ( igual ),
     .fim( fimE ),
     .fim_timer ( fim_timer_fio ),
@@ -70,7 +77,12 @@ unidade_controle uc(
     .acertou_out ( acertou ),
     .errou_out ( errou ),
     .db_estado( db_estado_fio ),
-	 .db_timeout_uc( db_timeout_fio )
+	.db_timeout_uc( db_timeout_fio )
+    .limpaM( limpaM_fio ),
+    .RegistraM( registraM_fio ),
+    .zera_timer_leds( zera_timer_leds_fio ),
+    .conta_timer_leds( conta_timer_leds_fio ),
+    .fim_timer_leds( fim_timer_leds_fio )
 );
 
 hexa7seg HEX2(
@@ -93,15 +105,13 @@ hexa7seg HEX4(
     .display( db_limite )
 );
 
-
-hexa7seg HEX5(
-    .hexa( db_estado_fio ),
+estado7seg HEX(
+    .estado( db_estado_fio ),
     .display( db_estado )
-);
+)
 
 assign db_timeout = db_timeout_fio;
 assign db_igual = igual;
 assign db_clock = clock;
-assign leds = db_jogada_fio;
 
 endmodule

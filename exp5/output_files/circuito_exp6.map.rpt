@@ -1,0 +1,591 @@
+Analysis & Synthesis report for circuito_exp6
+Sun Feb 09 00:10:06 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |circuito_exp6|unidade_controle:uc|Eatual
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:contador_limite
+ 13. Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:contador_timeout
+ 14. Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:temporizador_leds
+ 15. Parameter Settings for User Entity Instance: unidade_controle:uc
+ 16. Port Connectivity Checks: "fluxo_dados:fd|contador_m:temporizador_leds"
+ 17. Port Connectivity Checks: "fluxo_dados:fd|contador_m:contador_timeout"
+ 18. Port Connectivity Checks: "fluxo_dados:fd|comparador_85:comparadorlimite"
+ 19. Port Connectivity Checks: "fluxo_dados:fd|contador_m:contador_limite"
+ 20. Port Connectivity Checks: "fluxo_dados:fd|comparador_85:comparadorjogada"
+ 21. Port Connectivity Checks: "fluxo_dados:fd|contador_163:contador_endereco"
+ 22. Port Connectivity Checks: "fluxo_dados:fd"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Feb 09 00:10:05 2025       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; circuito_exp6                               ;
+; Top-level Entity Name           ; circuito_exp6                               ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 61                                          ;
+; Total pins                      ; 60                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; circuito_exp6      ; circuito_exp6      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; unidade_controle.v               ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/unidade_controle.v ;         ;
+; sync_rom_16x4.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/sync_rom_16x4.v    ;         ;
+; registrador_4.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/registrador_4.v    ;         ;
+; mux2x1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/mux2x1.v           ;         ;
+; hexa7seg.v                       ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/hexa7seg.v         ;         ;
+; fluxo_dados.v                    ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v      ;         ;
+; estado7seg.v                     ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/estado7seg.v       ;         ;
+; edge_detector.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/edge_detector.v    ;         ;
+; contador_m.v                     ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/contador_m.v       ;         ;
+; contador_163.v                   ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/contador_163.v     ;         ;
+; comparador_85.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/comparador_85.v    ;         ;
+; circuito_exp6.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v    ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 62          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 109         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 12          ;
+;     -- 5 input functions                    ; 20          ;
+;     -- 4 input functions                    ; 36          ;
+;     -- <=3 input functions                  ; 41          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 61          ;
+;                                             ;             ;
+; I/O pins                                    ; 60          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 62          ;
+; Total fan-out                               ; 712         ;
+; Average fan-out                             ; 2.46        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name      ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+------------------+--------------+
+; |circuito_exp6                         ; 109 (0)             ; 61 (0)                    ; 0                 ; 0          ; 60   ; 0            ; |circuito_exp6                                               ; circuito_exp6    ; work         ;
+;    |estado7seg:HEX|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|estado7seg:HEX                                ; estado7seg       ; work         ;
+;    |fluxo_dados:fd|                    ; 55 (1)              ; 44 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd                                ; fluxo_dados      ; work         ;
+;       |comparador_85:comparadorjogada| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|comparador_85:comparadorjogada ; comparador_85    ; work         ;
+;       |comparador_85:comparadorlimite| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|comparador_85:comparadorlimite ; comparador_85    ; work         ;
+;       |contador_163:contador_endereco| ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|contador_163:contador_endereco ; contador_163     ; work         ;
+;       |contador_m:contador_limite|     ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|contador_m:contador_limite     ; contador_m       ; work         ;
+;       |contador_m:contador_timeout|    ; 17 (17)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|contador_m:contador_timeout    ; contador_m       ; work         ;
+;       |contador_m:temporizador_leds|   ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|contador_m:temporizador_leds   ; contador_m       ; work         ;
+;       |edge_detector:detector|         ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|edge_detector:detector         ; edge_detector    ; work         ;
+;       |registrador_4:reg_mem|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|registrador_4:reg_mem          ; registrador_4    ; work         ;
+;       |registrador_4:registrador|      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|registrador_4:registrador      ; registrador_4    ; work         ;
+;       |sync_rom_16x4:memoria|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|fluxo_dados:fd|sync_rom_16x4:memoria          ; sync_rom_16x4    ; work         ;
+;    |hexa7seg:HEX0|                     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|hexa7seg:HEX0                                 ; hexa7seg         ; work         ;
+;    |hexa7seg:HEX1|                     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|hexa7seg:HEX1                                 ; hexa7seg         ; work         ;
+;    |hexa7seg:HEX4|                     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|hexa7seg:HEX4                                 ; hexa7seg         ; work         ;
+;    |unidade_controle:uc|               ; 26 (26)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_exp6|unidade_controle:uc                           ; unidade_controle ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |circuito_exp6|unidade_controle:uc|Eatual                                                                                                                                                                                                                                                                                                                                   ;
++--------------------------+----------------+--------------+--------------------------+-------------------------+-----------------------+----------------+-----------------+---------------+------------------------+-----------------------+------------------+--------------------+----------------------+-------------------------+-------------------+----------------+-------------------+
+; Name                     ; Eatual.timeout ; Eatual.errou ; Eatual.proxima_sequencia ; Eatual.avalia_sequencia ; Eatual.proxima_jogada ; Eatual.acertou ; Eatual.registra ; Eatual.espera ; Eatual.proxima_posicao ; Eatual.mostra_apagado ; Eatual.zera_leds ; Eatual.mostra_dado ; Eatual.carrega_dados ; Eatual.inicia_sequencia ; Eatual.preparacao ; Eatual.inicial ; Eatual.comparacao ;
++--------------------------+----------------+--------------+--------------------------+-------------------------+-----------------------+----------------+-----------------+---------------+------------------------+-----------------------+------------------+--------------------+----------------------+-------------------------+-------------------+----------------+-------------------+
+; Eatual.inicial           ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 0              ; 0                 ;
+; Eatual.preparacao        ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 1                 ; 1              ; 0                 ;
+; Eatual.inicia_sequencia  ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 1                       ; 0                 ; 1              ; 0                 ;
+; Eatual.carrega_dados     ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 1                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.mostra_dado       ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 1                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.zera_leds         ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 1                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.mostra_apagado    ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 1                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.proxima_posicao   ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 1                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.espera            ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 1             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.registra          ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 1               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.acertou           ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 1              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.proxima_jogada    ; 0              ; 0            ; 0                        ; 0                       ; 1                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.avalia_sequencia  ; 0              ; 0            ; 0                        ; 1                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.proxima_sequencia ; 0              ; 0            ; 1                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.errou             ; 0              ; 1            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.timeout           ; 1              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 0                 ;
+; Eatual.comparacao        ; 0              ; 0            ; 0                        ; 0                       ; 0                     ; 0              ; 0               ; 0             ; 0                      ; 0                     ; 0                ; 0                  ; 0                    ; 0                       ; 0                 ; 1              ; 1                 ;
++--------------------------+----------------+--------------+--------------------------+-------------------------+-----------------------+----------------+-----------------+---------------+------------------------+-----------------------+------------------+--------------------+----------------------+-------------------------+-------------------+----------------+-------------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; unidade_controle:uc|Eatual~4          ; Lost fanout        ;
+; unidade_controle:uc|Eatual~5          ; Lost fanout        ;
+; unidade_controle:uc|Eatual~6          ; Lost fanout        ;
+; unidade_controle:uc|Eatual~7          ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 61    ;
+; Number of registers using Synchronous Clear  ; 22    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 27    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 38    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |circuito_exp6|fluxo_dados:fd|contador_163:contador_endereco|Q[3] ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |circuito_exp6|fluxo_dados:fd|contador_m:temporizador_leds|Q[6]   ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |circuito_exp6|fluxo_dados:fd|contador_m:contador_timeout|Q[7]    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |circuito_exp6|fluxo_dados:fd|contador_m:contador_limite|Q[3]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:contador_limite ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; M              ; 16    ; Signed Integer                                                ;
+; N              ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:contador_timeout ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; M              ; 5000  ; Signed Integer                                                 ;
+; N              ; 13    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:fd|contador_m:temporizador_leds ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; M              ; 500   ; Signed Integer                                                  ;
+; N              ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: unidade_controle:uc ;
++-------------------+-------+--------------------------------------+
+; Parameter Name    ; Value ; Type                                 ;
++-------------------+-------+--------------------------------------+
+; inicial           ; 00000 ; Unsigned Binary                      ;
+; preparacao        ; 00001 ; Unsigned Binary                      ;
+; inicia_sequencia  ; 00010 ; Unsigned Binary                      ;
+; carrega_dados     ; 00011 ; Unsigned Binary                      ;
+; mostra_dado       ; 00100 ; Unsigned Binary                      ;
+; zera_leds         ; 00101 ; Unsigned Binary                      ;
+; mostra_apagado    ; 00110 ; Unsigned Binary                      ;
+; proxima_posicao   ; 00111 ; Unsigned Binary                      ;
+; espera            ; 01000 ; Unsigned Binary                      ;
+; registra          ; 01001 ; Unsigned Binary                      ;
+; comparacao        ; 10000 ; Unsigned Binary                      ;
+; proxima_jogada    ; 01011 ; Unsigned Binary                      ;
+; avalia_sequencia  ; 01100 ; Unsigned Binary                      ;
+; proxima_sequencia ; 01101 ; Unsigned Binary                      ;
+; timeout           ; 01111 ; Unsigned Binary                      ;
+; errou             ; 01110 ; Unsigned Binary                      ;
+; acertou           ; 01010 ; Unsigned Binary                      ;
++-------------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|contador_m:temporizador_leds" ;
++---------+--------+----------+-------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                   ;
++---------+--------+----------+-------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                              ;
+; Q       ; Output ; Info     ; Explicitly unconnected                    ;
+; meio    ; Output ; Info     ; Explicitly unconnected                    ;
++---------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|contador_m:contador_timeout" ;
++---------+--------+----------+------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                  ;
++---------+--------+----------+------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                             ;
+; Q       ; Output ; Info     ; Explicitly unconnected                   ;
+; meio    ; Output ; Info     ; Explicitly unconnected                   ;
++---------+--------+----------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|comparador_85:comparadorlimite"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ALBi ; Input  ; Info     ; Stuck at GND                                                                        ;
+; AGBi ; Input  ; Info     ; Stuck at GND                                                                        ;
+; AEBi ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; AGBo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|contador_m:contador_limite" ;
++---------+-------+----------+------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                  ;
++---------+-------+----------+------------------------------------------+
+; zera_as ; Input ; Info     ; Stuck at GND                             ;
++---------+-------+----------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|comparador_85:comparadorjogada"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ALBi ; Input  ; Info     ; Stuck at GND                                                                        ;
+; AGBi ; Input  ; Info     ; Stuck at GND                                                                        ;
+; AEBi ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ALBo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; AGBo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd|contador_163:contador_endereco" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; ld   ; Input ; Info     ; Stuck at VCC                                    ;
+; ent  ; Input ; Info     ; Stuck at VCC                                    ;
+; D    ; Input ; Info     ; Stuck at GND                                    ;
++------+-------+----------+-------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:fd"                                                                                                                                  ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                      ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel_nivel ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 61                          ;
+;     CLR               ; 19                          ;
+;     ENA               ; 8                           ;
+;     ENA CLR           ; 8                           ;
+;     ENA SCLR          ; 22                          ;
+;     plain             ; 4                           ;
+; arriav_lcell_comb     ; 118                         ;
+;     arith             ; 27                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 4                           ;
+;     normal            ; 91                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 36                          ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 12                          ;
+; boundary_port         ; 60                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.03                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Feb 09 00:10:00 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exp6_T1BB1_ativ2-inicial -c circuito_exp6
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file unidade_controle.v
+    Info (12023): Found entity 1: unidade_controle File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/unidade_controle.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file sync_rom_16x4.v
+    Info (12023): Found entity 1: sync_rom_16x4 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/sync_rom_16x4.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_4.v
+    Info (12023): Found entity 1: registrador_4 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/registrador_4.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file mux2x1_tb.v
+    Info (12023): Found entity 1: mux2x1_tb File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/mux2x1_tb.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file mux2x1_n_tb.v
+    Info (12023): Found entity 1: mux2x1_n_tb File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/mux2x1_n_tb.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file mux2x1_n.v
+    Info (12023): Found entity 1: mux2x1_n File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/mux2x1_n.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.v
+    Info (12023): Found entity 1: mux2x1 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/mux2x1.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file hexa7seg.v
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/hexa7seg.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file fluxo_dados.v
+    Info (12023): Found entity 1: fluxo_dados File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file estado7seg.v
+    Info (12023): Found entity 1: estado7seg File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/estado7seg.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file edge_detector.v
+    Info (12023): Found entity 1: edge_detector File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/edge_detector.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file desafio_exp5.v
+    Info (12023): Found entity 1: circuito_exp5 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/desafio_exp5.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_m_tb.v
+    Info (12023): Found entity 1: contador_m_tb File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/contador_m_tb.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file contador_m.v
+    Info (12023): Found entity 1: contador_m File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/contador_m.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file contador_163.v
+    Info (12023): Found entity 1: contador_163 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/contador_163.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_85.v
+    Info (12023): Found entity 1: comparador_85 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/comparador_85.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file circuito_exp6.v
+    Info (12023): Found entity 1: circuito_exp6 File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at fluxo_dados.v(58): created implicit net for "menor" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at fluxo_dados.v(59): created implicit net for "maior" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at fluxo_dados.v(90): created implicit net for "maiorquelim" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 90
+Warning (10236): Verilog HDL Implicit Net warning at fluxo_dados.v(115): created implicit net for "s_jogada" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 115
+Info (12127): Elaborating entity "circuito_exp6" for the top level hierarchy
+Warning (10034): Output port "leds" at circuito_exp6.v(10) has no driver File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 10
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "fluxo_dados:fd" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 55
+Info (12128): Elaborating entity "contador_163" for hierarchy "fluxo_dados:fd|contador_163:contador_endereco" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 49
+Info (12128): Elaborating entity "comparador_85" for hierarchy "fluxo_dados:fd|comparador_85:comparadorjogada" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 61
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:fd|contador_m:contador_limite" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 72
+Info (12128): Elaborating entity "mux2x1" for hierarchy "fluxo_dados:fd|mux2x1:seletor_nivel" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 79
+Info (12128): Elaborating entity "registrador_4" for hierarchy "fluxo_dados:fd|registrador_4:registrador" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 101
+Info (12128): Elaborating entity "sync_rom_16x4" for hierarchy "fluxo_dados:fd|sync_rom_16x4:memoria" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 108
+Info (12128): Elaborating entity "edge_detector" for hierarchy "fluxo_dados:fd|edge_detector:detector" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 116
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:fd|contador_m:contador_timeout" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 127
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:fd|contador_m:temporizador_leds" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/fluxo_dados.v Line: 138
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "unidade_controle:uc" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 85
+Info (12128): Elaborating entity "hexa7seg" for hierarchy "hexa7seg:HEX2" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 90
+Info (12128): Elaborating entity "estado7seg" for hierarchy "estado7seg:HEX" File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 110
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "leds[0]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 10
+    Warning (13410): Pin "leds[1]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 10
+    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 10
+    Warning (13410): Pin "leds[3]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 10
+    Warning (13410): Pin "db_timeout[0]" is stuck at VCC File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 11
+    Warning (13410): Pin "db_timeout[1]" is stuck at VCC File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 11
+    Warning (13410): Pin "db_timeout[2]" is stuck at VCC File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 11
+    Warning (13410): Pin "db_jogadafeita[0]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[1]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[2]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[3]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[4]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[5]" is stuck at GND File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+    Warning (13410): Pin "db_jogadafeita[6]" is stuck at VCC File: C:/Users/wesle/Documents/USP/quadrimestre1/Laboratório_digital/github/labdig1-T1BB1/exp5/circuito_exp6.v Line: 15
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 180 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 53 output pins
+    Info (21061): Implemented 120 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Sun Feb 09 00:10:06 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
+
+
